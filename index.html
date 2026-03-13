@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eliel Asafe | Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="nav-list">
+            <li><a href="#home" class="nav-item">Home</a></li>
+            <li><a href="#sobre" class="nav-item">Sobre</a></li>
+            <li><a href="#projetos" class="nav-item">Projetos</a></li>
+            <li><a href="#contato" class="nav-item">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="./src/img/perfil.jpeg" alt="Eu" class="foto-perfil">
+        <h1>Eliel Asafe</h1>
+        <p class="cabecalho-paragrafo">Desenvolvedor Frontend</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Sou Desenvolvedor Frontend apaixonado por transformar ideias em interfaces modernas, rápidas e
+                intuitivas. Busco sempre escrever código limpo, criar experiências agradáveis para o usuário e evoluir
+                constantemente acompanhando as novas tecnologias do desenvolvimento web.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+
+                <img src="./src/img/lojavirtual.webp" alt="Projeto 01" class="projetos-imagem">
+                
+                <div class="caixa-textos-projetos">
+                <h3 class="info-projetos">Loja Virtual</h3>
+                <p class="paragrafo-projetos">Loja virtual simples e moderna.</p>
+                </div>
+
+            </div>
+
+            <div class="projetos-card">
+                <img src="./src/img/webpage.webp" alt="Projeto 02" class="projetos-imagem">
+                
+                                <div class="caixa-textos-projetos">
+                <h3 class="info-projetos">Login Page</h3>
+                <p class="paragrafo-projetos">Página de Login simples com animação fluída entre telas de registro e
+                    login.</p>
+                    </div>
+            </div>
+
+            <div class="projetos-card" onclick="AbrirProjeto">
+                <img src="./src/img/low-poly-superhero.webp" alt="Projeto 03" class="projetos-imagem">
+                
+                <div class="caixa-textos-projetos">
+                <h3 class="info-projetos">X-Devs</h3>
+                <p class="paragrafo-projetos">Página de simples de apresentação de Cards estilo RPG.</p>
+            </div></div>
+    </section>
+
+    <section id="contatos">
+        <h2 class="contatos-titulo"> Entre em Contato</h2>
+
+        <form class="form-contato" id="form" onsubmit="enviarWhats(event);">
+
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea id="mensagem" class="campo-form" rows="4" placeholder="Digite sua mensagem..."></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar Mensagem no Whatsapp</button>
+
+        </form>
+    </section>
+    <script src="./script.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
